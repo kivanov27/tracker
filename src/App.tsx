@@ -1,10 +1,13 @@
 import "./index.css";
-import Sidebar from "./components/Sidebar/Sidebar";
+import { Link } from "react-router-dom";
 
 export function App() {
     return (
         <div className="app">
-            <Sidebar />
+            <Link to="/todo">To-do List</Link>
+            <Link to="/habit-tracker">Habit Tracker</Link>
+            <Link to="/gym-routine">Gym Routine</Link>
+            <Link to="/gym-tracker">Gym Tracker</Link>
         </div>
     );
 }

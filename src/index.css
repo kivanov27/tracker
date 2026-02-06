@@ -17,6 +17,35 @@ h1 {
     line-height: 1.1;
 }
 
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+.app a {
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: all 100ms ease-in-out;
+}
+.app a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.app a:active {
+    scale: 0.9;
+}
+
 .container {
     width: 100%;
     display: flex;

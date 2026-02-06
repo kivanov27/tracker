@@ -5,7 +5,6 @@ const server = serve({
     routes: {
         // Serve index.html for all unmatched routes.
         "/*": index,
-
         "/api/hello": {
             async GET(req) {
                 return Response.json({
@@ -20,13 +19,17 @@ const server = serve({
                 });
             },
         },
-
         "/api/hello/:name": async req => {
             const name = req.params.name;
             return Response.json({
                 message: `Hello, ${name}!`,
             });
         },
+        // "/api/todo": {
+        //     async GET(req) {
+        //
+        //     }
+        // }
     },
 
     development: process.env.NODE_ENV !== "production" && {

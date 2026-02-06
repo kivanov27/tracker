@@ -9,6 +9,7 @@
     "start": "NODE_ENV=production bun src/index.ts"
   },
   "dependencies": {
+    "postgres": "^3.4.8",
     "react": "^19",
     "react-dom": "^19",
     "react-router-dom": "^7.13.0"

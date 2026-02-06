@@ -1,0 +1,16 @@
+.sidebar {
+    width: 10%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    font-size: 1.2rem;
+    border-right: 1px solid white;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}

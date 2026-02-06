@@ -2,14 +2,14 @@ import type { TodoTask } from "@/types";
 import "./TodoItem.css";
 
 interface TodoItemProps {
-    todoTask: TodoTask;
+    todoItem: TodoTask;
 }
 
-const TodoItem = ({ todoTask }: TodoItemProps) => {
+const TodoItem = ({ todoItem }: TodoItemProps) => {
     return (
-        <div className="todo-item" key={todoTask.id}>
+        <div className="todo-item" key={todoItem.id}>
             <input type="checkbox" className="todo-item-checkbox" />
-            <span>{todoTask.task}</span>
+            <span>{todoItem.task}</span>
         </div>
     );
 };

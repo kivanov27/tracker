@@ -1,5 +1,6 @@
 import { serve } from "bun";
 import index from "./index.html";
+import { sql } from "./db";
 
 const server = serve({
     routes: {
@@ -25,11 +26,12 @@ const server = serve({
                 message: `Hello, ${name}!`,
             });
         },
-        // "/api/todo": {
-        //     async GET(req) {
-        //
-        //     }
-        // }
+        "/api/todo": {
+            async GET() {
+                const todoTasks = await sql`SELECT * FROM todo`;
+                return Response.json(todoTasks);
+            },
+        }
     },
 
     development: process.env.NODE_ENV !== "production" && {

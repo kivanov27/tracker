@@ -1,0 +1,14 @@
+.todo-item {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.todo-item-checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.todo-item span {
+    font-size: 1.1rem;
+}

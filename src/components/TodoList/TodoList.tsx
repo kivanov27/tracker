@@ -1,12 +1,16 @@
 import "./TodoList.css"
 import Sidebar from "../Sidebar/Sidebar";
+import TodoItem from "./TodoItem/TodoItem";
+
 
 const TodoList = () => {
+    const todoTask = { id: '1', task: 'the task to be done' };
+
     return (
         <div className="container">
             <Sidebar />
             <div className="todo">
-                <p>todo list</p>
+                <TodoItem todoTask={todoTask} />
             </div>
         </div>
     );

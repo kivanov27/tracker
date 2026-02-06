@@ -1,5 +1,5 @@
 .sidebar {
-    width: 10%;
+    width: 20%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -12,5 +12,15 @@
 
 .sidebar a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: transparent;
+    transition: all 200ms ease-in-out;
+
+    -webkit-text-decoration-color: transparent;
+    -moz-text-decoration-color: transparent;
+}
+
+.sidebar a:hover {
+    text-decoration-color: white;
 }

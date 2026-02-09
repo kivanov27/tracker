@@ -1,6 +1,6 @@
 import { serve } from "bun";
-import index from "./index.html";
-import { sql } from "./db";
+import index from "../app/index.html";
+import { sql } from "../db/db";
 
 const server = serve({
     routes: {

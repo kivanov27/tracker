@@ -31,6 +31,15 @@ const server = serve({
                 const todoTasks = await sql`SELECT * FROM todo`;
                 return Response.json(todoTasks);
             },
+        },
+        "/api/todo/:id": {
+            async DELETE(req) {
+                const result = await sql`DELETE FROM todo WHERE id = ${req.params.id}`;
+                if (result.length === 0) {
+                    return new Response(null, { status: 404 });
+                }
+                return new Response(null, { status: 204 });
+            }
         }
     },
 

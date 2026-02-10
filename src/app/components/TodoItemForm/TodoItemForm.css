@@ -1,0 +1,28 @@
+form {
+    width: fit-content;
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: 2rem;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+form button {
+    width: fit-content;
+    cursor: pointer;
+}
+
+.visible {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}

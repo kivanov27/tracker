@@ -5,3 +5,7 @@
     padding: 5rem;
     row-gap: 1.5rem;
 }
+
+.todo button {
+    width: fit-content;
+}

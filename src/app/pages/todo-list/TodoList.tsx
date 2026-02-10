@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import "./TodoList.css";
 import Sidebar from "@/app/components/Sidebar/Sidebar";
-import TodoItem from "@/app/components/TodoItem/TodoItem";
-import TodoItemForm from "@/app/components/TodoItemForm/TodoItemForm";
+import TodoItem from "./TodoItem/TodoItem";
+import TodoItemForm from "./TodoItemForm/TodoItemForm";
 import type { NewTodoTask, TodoTask } from "@/lib/types";
 
 const TodoList = () => {

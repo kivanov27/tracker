@@ -9,6 +9,39 @@
     height: 1.5rem;
 }
 
-.todo-item span {
+.todo-item-text {
     font-size: 1.1rem;
+    position: relative;
+}
+
+.todo-item.removing .todo-item-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 2px;
+    width: 100%;
+    background: currentColor;
+    animation: strike 200ms ease-out forwards;
+}
+
+.todo-item.removing {
+    animation: fadeOut 200ms ease-in forwards;
+    animation-delay: 200ms;
+}
+
+@keyframes strike {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translateX(10px);
+    }
 }

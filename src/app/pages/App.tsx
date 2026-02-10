@@ -1,12 +1,13 @@
 import "./index.css";
+import { Link } from "react-router-dom";
 
-export function App() {
+const App = () => {
     return (
         <div className="app">
-            <a href="/todo-list">To-do List</a>
-            <a href="/habit-tracker">Habit Tracker</a>
-            <a href="/gym-routine">Gym Routine</a>
-            <a href="/gym-tracker">Gym Tracker</a>
+            <Link to="/todo-list">To-do List</Link>
+            <Link to="/habit-tracker">Habit Tracker</Link>
+            <Link to="/gym-routine">Gym Routine</Link>
+            <Link to="/gym-tracker">Gym Tracker</Link>
         </div>
     );
 }

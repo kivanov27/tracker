@@ -1,0 +1,11 @@
+.habit-tracker {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    row-gap: 1.5rem;
+}
+
+.habit-tracker button {
+    width: fit-content;
+}

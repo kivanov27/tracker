@@ -48,7 +48,7 @@ const TodoList = () => {
                 {tasks.map((task: TodoTask) =>
                     <TodoItem key={task.id} todoItem={task} completeTask={completeTask} />
                 )}
-                <button onClick={() => setFormOpen(!formOpen)}>Add task</button>
+                <button onClick={() => setFormOpen(!formOpen)}>{formOpen ? "Close form" : "Add task"}</button>
                 <TodoItemForm isOpen={formOpen} setOpen={setFormOpen} addTask={addTask} />
             </div>
         </div>
